@@ -3,180 +3,298 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Groom Book — Open Source Pet Grooming Business Management</title>
-  <meta name="description" content="Free, open source, self-hostable pet grooming CRM and business management platform. Schedule appointments, manage clients, and run your salon on your own server.">
-  <meta property="og:title" content="Groom Book — Open Source Pet Grooming Business Management">
-  <meta property="og:description" content="Free, open source, self-hostable pet grooming CRM and business management platform.">
+  <title>GroomBook — Open Source Pet Grooming Business Management</title>
+  <meta name="description" content="Built for groomers, not corporations. Open source, self-hostable scheduling and client management platform built specifically for independent pet groomers.">
+  <meta property="og:title" content="GroomBook — Built for groomers, not corporations">
+  <meta property="og:description" content="Open source scheduling and client management platform built specifically for independent pet groomers.">
   <meta property="og:type" content="website">
-  <link rel="canonical" href="https://groombook.github.io/groombook/">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; }
-    .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
-    header { background: #1a1a2e; color: #fff; padding: 60px 0; text-align: center; }
-    header h1 { font-size: 2.5rem; margin-bottom: 10px; }
-    header p { font-size: 1.25rem; color: #a0a0a0; max-width: 600px; margin: 0 auto; }
-    .hero-badge { display: inline-block; background: #4CAF50; color: #fff; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; margin-bottom: 20px; }
-    .cta-buttons { margin-top: 30px; }
-    .cta-buttons a { display: inline-block; padding: 14px 28px; border-radius: 6px; text-decoration: none; font-weight: 600; margin: 5px; }
-    .btn-primary { background: #4CAF50; color: #fff; }
-    .btn-secondary { background: #333; color: #fff; }
-    .features { padding: 80px 0; background: #f9f9f9; }
-    .features h2 { text-align: center; font-size: 2rem; margin-bottom: 50px; }
-    .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
-    .feature-card { background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-    .feature-card h3 { color: #1a1a2e; margin-bottom: 10px; font-size: 1.1rem; }
-    .comparison { padding: 80px 0; }
-    .comparison h2 { text-align: center; font-size: 2rem; margin-bottom: 50px; }
-    table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-    th, td { padding: 15px 20px; text-align: left; border-bottom: 1px solid #eee; }
-    th { background: #1a1a2e; color: #fff; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #fff; padding: 80px 0; text-align: center; }
+    header h1 { font-size: 3rem; margin-bottom: 15px; font-weight: 700; }
+    .tagline { font-size: 1.4rem; color: #90EE90; margin-bottom: 25px; font-weight: 600; }
+    header p { font-size: 1.1rem; color: #c0c0c0; max-width: 700px; margin: 0 auto 30px; line-height: 1.8; }
+    .hero-badge { display: inline-block; background: #4CAF50; color: #fff; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; margin-bottom: 25px; font-weight: 600; }
+    .cta-buttons { margin-top: 40px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+    .cta-buttons a { display: inline-block; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1rem; transition: all 0.3s; }
+    .btn-primary { background: #4CAF50; color: #fff; border: 2px solid #4CAF50; }
+    .btn-primary:hover { background: #45a049; transform: translateY(-2px); }
+    .btn-secondary { background: transparent; color: #fff; border: 2px solid #fff; }
+    .btn-secondary:hover { background: #fff; color: #1a1a2e; }
+    .btn-demo { background: #FF9500; color: #fff; border: 2px solid #FF9500; }
+    .btn-demo:hover { background: #f59700; transform: translateY(-2px); }
+    .features { padding: 100px 0; background: #f9f9f9; }
+    .features h2 { text-align: center; font-size: 2.2rem; margin-bottom: 60px; color: #1a1a2e; }
+    .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+    .feature-card { background: #fff; padding: 35px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s; }
+    .feature-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.12); }
+    .feature-card h3 { color: #1a1a2e; margin-bottom: 12px; font-size: 1.2rem; }
+    .feature-card p { color: #666; line-height: 1.7; }
+    .demo-section { padding: 100px 0; background: #fff; text-align: center; }
+    .demo-section h2 { font-size: 2.2rem; margin-bottom: 30px; color: #1a1a2e; }
+    .demo-section p { font-size: 1.1rem; color: #666; max-width: 600px; margin: 0 auto 40px; }
+    .comparison { padding: 100px 0; background: #fff; }
+    .comparison h2 { text-align: center; font-size: 2.2rem; margin-bottom: 50px; color: #1a1a2e; }
+    .comparison-table { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+    th, td { padding: 18px 20px; text-align: left; border-bottom: 1px solid #eee; }
+    th { background: #1a1a2e; color: #fff; font-weight: 600; }
     tr:last-child td { border-bottom: none; }
-    .check { color: #4CAF50; font-weight: bold; }
-    .cross { color: #e74c3c; font-weight: bold; }
-    .quickstart { padding: 80px 0; background: #f9f9f9; }
-    .quickstart h2 { text-align: center; font-size: 2rem; margin-bottom: 30px; }
-    .code-block { background: #1a1a2e; color: #fff; padding: 20px; border-radius: 6px; overflow-x: auto; font-family: 'Courier New', monospace; font-size: 0.9rem; margin: 20px 0; }
+    .check { color: #4CAF50; font-weight: bold; font-size: 1.2rem; }
+    .cross { color: #e74c3c; font-weight: bold; font-size: 1.2rem; }
+    .quickstart { padding: 100px 0; background: #f9f9f9; }
+    .quickstart h2 { text-align: center; font-size: 2.2rem; margin-bottom: 40px; color: #1a1a2e; }
+    .code-block { background: #1a1a2e; color: #a0a0a0; padding: 25px; border-radius: 8px; overflow-x: auto; font-family: 'Courier New', monospace; font-size: 0.95rem; margin: 30px 0; border-left: 4px solid #4CAF50; }
     .code-block code { color: #a0a0a0; }
-    .code-block .prompt { color: #4CAF50; }
-    footer { background: #1a1a2e; color: #fff; padding: 40px 0; text-align: center; }
-    footer a { color: #4CAF50; text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-    .footer-links { margin-top: 20px; }
-    .footer-links a { margin: 0 15px; }
+    .code-block .prompt { color: #4CAF50; font-weight: bold; }
+    .quickstart-link { text-align: center; margin-top: 30px; }
+    .quickstart-link a { color: #4CAF50; font-weight: 600; font-size: 1.05rem; }
+    .roadmap { padding: 100px 0; background: #fff; }
+    .roadmap h2 { text-align: center; font-size: 2.2rem; margin-bottom: 50px; color: #1a1a2e; }
+    .roadmap-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+    .roadmap-item { background: #f9f9f9; padding: 30px; border-radius: 10px; border-left: 4px solid #4CAF50; }
+    .roadmap-item.upcoming { border-left-color: #FF9500; }
+    .roadmap-item h3 { color: #1a1a2e; margin-bottom: 10px; font-size: 1.15rem; }
+    .roadmap-item .status { display: inline-block; font-size: 0.8rem; padding: 4px 10px; border-radius: 12px; margin-bottom: 10px; font-weight: 600; }
+    .status.current { background: #4CAF50; color: #fff; }
+    .status.upcoming { background: #FF9500; color: #fff; }
+    .blog-preview { padding: 80px 0; background: #f9f9f9; }
+    .blog-preview h2 { text-align: center; font-size: 2.2rem; margin-bottom: 50px; color: #1a1a2e; }
+    .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+    .blog-card { background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s; }
+    .blog-card:hover { transform: translateY(-5px); }
+    .blog-card h3 { margin-bottom: 10px; font-size: 1.15rem; }
+    .blog-card h3 a { color: #1a1a2e; text-decoration: none; }
+    .blog-card h3 a:hover { color: #4CAF50; }
+    .blog-date { color: #999; font-size: 0.9rem; margin-bottom: 15px; }
+    .blog-card p { color: #666; font-size: 0.95rem; line-height: 1.7; }
+    .blog-card a { color: #4CAF50; font-weight: 600; text-decoration: none; }
+    footer { background: #1a1a2e; color: #fff; padding: 50px 0; text-align: center; border-top: 1px solid #333; }
+    footer p { color: #c0c0c0; }
+    footer strong { color: #fff; }
+    .footer-links { margin-top: 25px; display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
+    .footer-links a { color: #4CAF50; text-decoration: none; font-weight: 600; }
+    .footer-links a:hover { text-decoration: underline; }
+    .section-subtitle { font-size: 0.95rem; color: #666; margin-bottom: 40px; text-align: center; max-width: 700px; margin-left: auto; margin-right: auto; }
   </style>
 </head>
 <body>
   <header>
     <div class="container">
-      <span class="hero-badge">100% Open Source — MIT License</span>
-      <h1>Groom Book</h1>
-      <p>Open source, self-hostable pet grooming business management and CRM. No vendor lock-in. No monthly fees.</p>
+      <span class="hero-badge">🎉 100% Open Source — MIT License</span>
+      <h1>GroomBook</h1>
+      <p class="tagline">Built for groomers, not corporations.</p>
+      <p>Open source, self-hostable scheduling and client management platform built specifically for independent pet groomers. Give your business the tools of enterprise software without the enterprise price tag or vendor lock-in.</p>
       <div class="cta-buttons">
+        <a href="https://groombook.farh.net" class="btn-demo">Try the Demo →</a>
         <a href="https://github.com/groombook/groombook" class="btn-primary">View on GitHub</a>
-        <a href="https://github.com/groombook/groombook/stargazers" class="btn-secondary">Star the Project</a>
+        <a href="getting-started/" class="btn-secondary">Get Started</a>
       </div>
     </div>
   </header>
 
   <section class="features">
     <div class="container">
-      <h2>Everything You Need to Run Your Grooming Business</h2>
+      <h2>Everything Independent Groomers Need</h2>
+      <p class="section-subtitle">Purpose-built features that solve the real pain points of running a grooming shop.</p>
       <div class="feature-grid">
         <div class="feature-card">
-          <h3>📅 Appointment Scheduling</h3>
-          <p>Calendar management for single or multiple groomers. Drag-and-drop scheduling with automatic conflict detection.</p>
+          <h3>📅 Calendar Feeds</h3>
+          <p>Push GroomBook appointments directly into Google Calendar, Apple Calendar, or Outlook via iCal. Your calendar, your way — no app switching.</p>
         </div>
         <div class="feature-card">
-          <h3>🐾 Client & Pet Records</h3>
-          <p>Detailed profiles with grooming history, coat types, behavior notes, and preferences. Never lose a pet's information again.</p>
+          <h3>🐾 Client Search & Pet Records</h3>
+          <p>Never lose context on a regular. Detailed profiles with grooming history, coat types, behavior notes, breed data, and service preferences at your fingertips.</p>
         </div>
         <div class="feature-card">
-          <h3>💳 Online Booking Portal</h3>
-          <p>Let clients book appointments 24/7 through your own self-service portal. No more phone tag.</p>
+          <h3>💬 Stop Chasing Confirmations</h3>
+          <p>Let clients confirm or cancel appointments through their own portal. Automated waitlist fills cancelled slots instantly — no more lost revenue to no-shows.</p>
         </div>
         <div class="feature-card">
-          <h3>💰 POS & Invoicing</h3>
+          <h3>📱 Customer Portal & Booking</h3>
+          <p>24/7 self-service booking for clients. No more phone tag or chasing scheduling confirmations.</p>
+        </div>
+        <div class="feature-card">
+          <h3>👥 Staff Access Control (RBAC)</h3>
+          <p>Multi-staff shops: front desk sees bookings, only you see financials. Role-appropriate access for every team member.</p>
+        </div>
+        <div class="feature-card">
+          <h3>🔔 Automated Reminders</h3>
+          <p>SMS and email reminders reduce no-shows. Clients get appointment confirmations; staff gets scheduling notifications.</p>
+        </div>
+        <div class="feature-card">
+          <h3>💳 POS & Invoicing</h3>
           <p>Process payments, record tips, and generate receipts. Full financial tracking without spreadsheets.</p>
         </div>
         <div class="feature-card">
-          <h3>📱 PWA — Works Offline</h3>
-          <p>Install on mobile devices. Perfect for mobile groomers who need access in basements, garages, and rural areas.</p>
+          <h3>📊 Business Insights</h3>
+          <p>Revenue analytics, groomer utilization trends, and performance reports. Know exactly how your salon is performing.</p>
         </div>
         <div class="feature-card">
-          <h3>📊 Reporting Dashboard</h3>
-          <p>Revenue analytics, utilization trends, and business insights. Know exactly how your salon is performing.</p>
+          <h3>📱 Works Offline (PWA)</h3>
+          <p>Installable on mobile devices as a native app. Works offline—perfect for mobile groomers in basements, garages, and rural areas with spotty signal.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="demo-section">
+    <div class="container">
+      <h2>See It In Action</h2>
+      <p>Try the live demo environment. Log in with demo credentials to explore the full groomer and customer experience.</p>
+      <a href="https://groombook.farh.net" class="btn-demo" style="display: inline-block;">Launch Demo →</a>
+      <p style="margin-top: 25px; color: #999; font-size: 0.95rem;">Or run it locally: <code style="background: #f0f0f0; padding: 4px 8px; border-radius: 4px;">docker compose up</code></p>
     </div>
   </section>
 
   <section class="comparison">
     <div class="container">
-      <h2>Why Groom Book?</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Feature</th>
-            <th>Groom Book</th>
-            <th>Legacy Software</th>
-            <th>SaaS Platforms</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Self-host on your own server</td>
-            <td class="check">✓</td>
-            <td class="cross">✗</td>
-            <td class="cross">✗</td>
-          </tr>
-          <tr>
-            <td>No monthly fees</td>
-            <td class="check">✓</td>
-            <td class="cross">✗ ($150-250/mo)</td>
-            <td class="cross">✗</td>
-          </tr>
-          <tr>
-            <td>You own your data</td>
-            <td class="check">✓</td>
-            <td class="check">✓</td>
-            <td class="cross">✗</td>
-          </tr>
-          <tr>
-            <td>No booking revenue cut</td>
-            <td class="check">✓</td>
-            <td class="check">✓</td>
-            <td class="cross">✗ (up to 30%)</td>
-          </tr>
-          <tr>
-            <td>PWA with offline support</td>
-            <td class="check">✓</td>
-            <td class="cross">✗</td>
-            <td class="cross">✗</td>
-          </tr>
-          <tr>
-            <td>Open source & customizable</td>
-            <td class="check">✓</td>
-            <td class="cross">✗</td>
-            <td class="cross">✗</td>
-          </tr>
-        </tbody>
-      </table>
+      <h2>Why GroomBook?</h2>
+      <p class="section-subtitle">How we stack up against the alternatives your shop might be using today.</p>
+      <div class="comparison-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>GroomBook</th>
+              <th>MoeGo / Gingr</th>
+              <th>Legacy Software</th>
+              <th>Generic Schedulers</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Self-hosted or free tier</strong></td>
+              <td class="check">✓</td>
+              <td class="cross">✗ ($50-150/mo)</td>
+              <td class="cross">✗</td>
+              <td class="check">✓</td>
+            </tr>
+            <tr>
+              <td><strong>You own your client data</strong></td>
+              <td class="check">✓</td>
+              <td class="cross">✗ (vendor lock-in)</td>
+              <td class="check">✓</td>
+              <td class="cross">✗</td>
+            </tr>
+            <tr>
+              <td><strong>Built for grooming workflows</strong></td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td class="cross">✗</td>
+              <td class="cross">✗</td>
+            </tr>
+            <tr>
+              <td><strong>Calendar feeds (iCal)</strong></td>
+              <td class="check">✓</td>
+              <td class="cross">✗</td>
+              <td class="cross">✗</td>
+              <td class="check">✓</td>
+            </tr>
+            <tr>
+              <td><strong>Automated waitlist</strong></td>
+              <td class="check">✓</td>
+              <td class="check">✓</td>
+              <td class="cross">✗</td>
+              <td class="cross">✗</td>
+            </tr>
+            <tr>
+              <td><strong>Open source & customizable</strong></td>
+              <td class="check">✓</td>
+              <td class="cross">✗</td>
+              <td class="cross">✗</td>
+              <td class="cross">✗</td>
+            </tr>
+            <tr>
+              <td><strong>Works offline (PWA)</strong></td>
+              <td class="check">✓</td>
+              <td class="cross">✗</td>
+              <td class="cross">✗</td>
+              <td class="cross">✗</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="roadmap">
+    <div class="container">
+      <h2>What's Coming</h2>
+      <p class="section-subtitle">Active development roadmap. We're building features groomers have asked for.</p>
+      <div class="roadmap-grid">
+        <div class="roadmap-item">
+          <span class="status current">Current</span>
+          <h3>Appointment Scheduling</h3>
+          <p>Calendar management, drag-and-drop booking, conflict detection, and iCal sync.</p>
+        </div>
+        <div class="roadmap-item">
+          <span class="status current">Current</span>
+          <h3>Client Portal & Waitlist</h3>
+          <p>Self-service booking, cancellations, and automated waitlist fulfillment.</p>
+        </div>
+        <div class="roadmap-item">
+          <span class="status current">Current</span>
+          <h3>Financial Tracking</h3>
+          <p>POS, invoicing, payment processing, and revenue analytics.</p>
+        </div>
+        <div class="roadmap-item">
+          <span class="status upcoming">Upcoming</span>
+          <h3>Advanced Reporting</h3>
+          <p>Custom reports, groomer utilization dashboards, and forecasting.</p>
+        </div>
+        <div class="roadmap-item">
+          <span class="status upcoming">Upcoming</span>
+          <h3>Mobile App</h3>
+          <p>Native iOS and Android apps for on-the-go scheduling and client management.</p>
+        </div>
+        <div class="roadmap-item">
+          <span class="status upcoming">Upcoming</span>
+          <h3>Integration Hub</h3>
+          <p>Connect with payment processors, SMS gateways, accounting software, and more.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="quickstart">
     <div class="container">
-      <h2>Get Started in 5 Minutes</h2>
+      <h2>Deploy in 5 Minutes</h2>
+      <p class="section-subtitle">Run GroomBook on your own server with Docker Compose.</p>
       <div class="code-block">
         <code><span class="prompt">$</span> git clone https://github.com/groombook/groombook.git</code><br>
         <code><span class="prompt">$</span> cd groombook</code><br>
-        <code><span class="prompt">$</span> docker compose up --build</code>
+        <code><span class="prompt">$</span> docker compose up --build</code><br>
+        <br>
+        <code style="color: #90EE90;">👉 Web UI: <strong>http://localhost:5173</strong></code><br>
+        <code style="color: #90EE90;">👉 API: <strong>http://localhost:3000</strong></code>
       </div>
-      <p style="text-align: center; color: #666; margin-top: 10px;">
-        Web UI: <strong>http://localhost:8080</strong> &nbsp;|&nbsp; API: <strong>http://localhost:3000</strong>
+      <p style="text-align: center; color: #666; margin-top: 25px;">
+        Want step-by-step guidance?
       </p>
-      <p style="text-align: center; margin-top: 30px;">
-        <a href="getting-started/">Full Getting Started Guide →</a>
-      </p>
+      <div class="quickstart-link">
+        <a href="getting-started/">📖 Read the Full Getting Started Guide →</a>
+      </div>
     </div>
   </section>
 
-  <section class="blog-preview" style="padding: 60px 0; background: #fff;">
+  <section class="blog-preview">
     <div class="container">
-      <h2 style="text-align: center; font-size: 2rem; margin-bottom: 30px;">From the Blog</h2>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
-        <div style="background: #f9f9f9; padding: 25px; border-radius: 8px;">
-          <h3 style="margin-bottom: 10px; font-size: 1.1rem;"><a href="blog/launch.html" style="color: #1a1a2e; text-decoration: none;">Introducing Groom Book</a></h3>
-          <p style="color: #666; font-size: 0.9rem; margin-bottom: 15px;">March 2026</p>
-          <p style="font-size: 0.95rem;">The CRM you've been waiting for if you're tired of paper files, spreadsheets, and overpriced salon software.</p>
-          <a href="blog/launch.html" style="color: #4CAF50; font-size: 0.9rem;">Read more →</a>
+      <h2>From the Blog</h2>
+      <div class="blog-grid">
+        <div class="blog-card">
+          <h3><a href="blog/launch.html">Introducing GroomBook</a></h3>
+          <p class="blog-date">March 2026</p>
+          <p>The open source CRM you've been waiting for if you're tired of paper files, spreadsheets, and overpriced salon software.</p>
+          <a href="blog/launch.html">Read more →</a>
         </div>
-        <div style="background: #f9f9f9; padding: 25px; border-radius: 8px;">
-          <h3 style="margin-bottom: 10px; font-size: 1.1rem;"><a href="blog/why-we-built.html" style="color: #1a1a2e; text-decoration: none;">Why We Built Groom Book</a></h3>
-          <p style="color: #666; font-size: 0.9rem; margin-bottom: 15px;">March 2026</p>
-          <p style="font-size: 0.95rem;">An honest look at the pet grooming software landscape — and why we decided to do something about it.</p>
-          <a href="blog/why-we-built.html" style="color: #4CAF50; font-size: 0.9rem;">Read more →</a>
+        <div class="blog-card">
+          <h3><a href="blog/why-we-built.html">Why We Built GroomBook</a></h3>
+          <p class="blog-date">March 2026</p>
+          <p>An honest look at the pet grooming software landscape—and why we decided to build something specifically for independent groomers.</p>
+          <a href="blog/why-we-built.html">Read more →</a>
         </div>
       </div>
     </div>
@@ -184,14 +302,14 @@
 
   <footer>
     <div class="container">
-      <p><strong>Groom Book</strong> — Open source pet grooming business management</p>
-      <p style="color: #a0a0a0; font-size: 0.9rem; margin-top: 5px;">MIT License — You own this software, fully.</p>
+      <p><strong>GroomBook</strong> — Open source scheduling and client management for independent pet groomers.</p>
+      <p style="color: #999; font-size: 0.9rem; margin-top: 8px;">MIT License — You own this software, fully.</p>
       <div class="footer-links">
         <a href="https://github.com/groombook/groombook">GitHub</a>
         <a href="https://github.com/groombook/groombook/issues">Issues</a>
         <a href="https://discord.gg/groombook">Discord</a>
-        <a href="blog/launch.html">Launch Announcement</a>
-        <a href="blog/why-we-built.html">Why We Built</a>
+        <a href="blog/launch.html">Blog</a>
+        <a href="getting-started/">Docs</a>
       </div>
     </div>
   </footer>
