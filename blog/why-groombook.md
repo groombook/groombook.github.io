@@ -73,7 +73,7 @@ GroomBook is **open-source, self-hosted pet grooming software** built specifical
 
 **Free.**
 
-MIT license. Download it, run it yourself, no subscription.
+AGPL-3.0 license. Download it, run it yourself, no subscription.
 
 You can have it running in 5 minutes:
 
