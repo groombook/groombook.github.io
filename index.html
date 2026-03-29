@@ -71,6 +71,17 @@
     .blog-date { color: #999; font-size: 0.9rem; margin-bottom: 15px; }
     .blog-card p { color: #666; font-size: 0.95rem; line-height: 1.7; }
     .blog-card a { color: #4CAF50; font-weight: 600; text-decoration: none; }
+    .how-it-works-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-bottom: 50px; }
+    .workflow-card { background: #f9f9f9; padding: 35px; border-radius: 10px; text-align: center; transition: transform 0.3s; }
+    .workflow-card:hover { transform: translateY(-5px); }
+    .workflow-icon { font-size: 2.5rem; margin-bottom: 15px; }
+    .workflow-card h3 { color: #1a1a2e; margin-bottom: 12px; font-size: 1.25rem; }
+    .workflow-card p { color: #666; line-height: 1.7; font-size: 0.95rem; }
+    .screenshot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin: 60px 0; }
+    .screenshot-item { text-align: center; }
+    .screenshot-item img { width: 100%; border-radius: 8px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); margin-bottom: 15px; }
+    .screenshot-item h4 { color: #1a1a2e; margin-bottom: 8px; font-size: 1.05rem; font-weight: 600; }
+    .screenshot-item p { color: #666; font-size: 0.9rem; line-height: 1.6; }
     footer { background: #1a1a2e; color: #fff; padding: 50px 0; text-align: center; border-top: 1px solid #333; }
     footer p { color: #c0c0c0; }
     footer strong { color: #fff; }
@@ -142,10 +153,66 @@
 
   <section class="demo-section">
     <div class="container">
-      <h2>See It In Action</h2>
-      <p>Try the live demo environment. Log in with demo credentials to explore the full groomer and customer experience.</p>
-      <a href="https://groombook.farh.net" class="btn-demo" style="display: inline-block;">Launch Demo →</a>
-      <p style="margin-top: 25px; color: #999; font-size: 0.95rem;">Or run it locally: <code style="background: #f0f0f0; padding: 4px 8px; border-radius: 4px;">docker compose up</code></p>
+      <h2>How It Works</h2>
+      <p class="section-subtitle">Three core workflows that solve grooming shop chaos.</p>
+
+      <div class="how-it-works-grid">
+        <div class="workflow-card">
+          <div class="workflow-icon">📅</div>
+          <h3>Book an Appointment</h3>
+          <p>Breed-aware scheduling that handles duration and complexity. Never double-book again. Clients can book themselves through the portal, and you get instant SMS/email notifications.</p>
+        </div>
+
+        <div class="workflow-card">
+          <div class="workflow-icon">👥</div>
+          <h3>Client Portal & Pet History</h3>
+          <p>Searchable client records. Track pet health notes, vaccination dates, allergies, and coat preferences. One place for all the information you used to keep on scraps of paper.</p>
+        </div>
+
+        <div class="workflow-card">
+          <div class="workflow-icon">⏳</div>
+          <h3>Manage Waitlist & No-Shows</h3>
+          <p>Automated waitlist system fills cancellations instantly. Send no-show reminders and track which clients are reliable. Never lose a booking to a last-minute cancellation again.</p>
+        </div>
+      </div>
+
+      <div class="screenshot-grid">
+        <div class="screenshot-item">
+          <img src="01-appointments-calendar.png" alt="Weekly appointment calendar with breed-aware scheduling">
+          <h4>📅 Appointment Calendar</h4>
+          <p>Color-coded appointments, breed-specific labels, and conflict detection at a glance.</p>
+        </div>
+
+        <div class="screenshot-item">
+          <img src="02-book-appointment.png" alt="Book an appointment workflow">
+          <h4>✏️ Book Appointment</h4>
+          <p>Intuitive step wizard for scheduling. Clients choose service, date, time, and confirm instantly.</p>
+        </div>
+
+        <div class="screenshot-item">
+          <img src="03-client-pet-history.png" alt="Client and pet profile with grooming history">
+          <h4>🐾 Pet Profiles & History</h4>
+          <p>All client and pet information in one place—grooming history, health notes, and preferences.</p>
+        </div>
+
+        <div class="screenshot-item">
+          <img src="04-services-management.png" alt="Services management with breed-based pricing">
+          <h4>💰 Service Pricing</h4>
+          <p>Manage services with breed-specific pricing tiers. Set durations and track availability.</p>
+        </div>
+
+        <div class="screenshot-item">
+          <img src="05-customer-portal.png" alt="Customer portal dashboard">
+          <h4>👥 Customer Portal</h4>
+          <p>Clients see their appointments, pets, and history. 24/7 access to manage their grooming record.</p>
+        </div>
+      </div>
+
+      <div style="text-align: center;">
+        <p style="color: #666; margin-bottom: 25px;">Ready to try it? Choose your path:</p>
+        <a href="https://groombook.farh.net" class="btn-demo" style="display: inline-block; margin-right: 15px;">Launch Live Demo →</a>
+        <a href="getting-started/" class="btn-secondary" style="display: inline-block;">Deploy Locally</a>
+      </div>
     </div>
   </section>
 
