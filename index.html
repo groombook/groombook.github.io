@@ -32,9 +32,15 @@
     .feature-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.12); }
     .feature-card h3 { color: #1a1a2e; margin-bottom: 12px; font-size: 1.2rem; }
     .feature-card p { color: #666; line-height: 1.7; }
-    .demo-section { padding: 100px 0; background: #fff; text-align: center; }
-    .demo-section h2 { font-size: 2.2rem; margin-bottom: 30px; color: #1a1a2e; }
-    .demo-section p { font-size: 1.1rem; color: #666; max-width: 600px; margin: 0 auto 40px; }
+    .demo-section { padding: 100px 0; background: #fff; }
+    .demo-section h2 { font-size: 2.2rem; margin-bottom: 15px; color: #1a1a2e; text-align: center; }
+    .demo-section > .container > p { font-size: 1.1rem; color: #666; max-width: 600px; margin: 0 auto 60px; text-align: center; }
+    .demo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; margin-bottom: 60px; }
+    .demo-item { text-align: center; }
+    .demo-item img { width: 100%; border-radius: 8px; box-shadow: 0 8px 20px rgba(0,0,0,0.15); margin-bottom: 20px; }
+    .demo-item h3 { font-size: 1.2rem; color: #1a1a2e; margin-bottom: 12px; font-weight: 600; }
+    .demo-item p { font-size: 0.95rem; color: #666; line-height: 1.6; }
+    .demo-cta { text-align: center; }
     .comparison { padding: 100px 0; background: #fff; }
     .comparison h2 { text-align: center; font-size: 2.2rem; margin-bottom: 50px; color: #1a1a2e; }
     .comparison-table { overflow-x: auto; }
@@ -142,10 +148,34 @@
 
   <section class="demo-section">
     <div class="container">
-      <h2>See It In Action</h2>
-      <p>Try the live demo environment. Log in with demo credentials to explore the full groomer and customer experience.</p>
-      <a href="https://groombook.farh.net" class="btn-demo" style="display: inline-block;">Launch Demo →</a>
-      <p style="margin-top: 25px; color: #999; font-size: 0.95rem;">Or run it locally: <code style="background: #f0f0f0; padding: 4px 8px; border-radius: 4px;">docker compose up</code></p>
+      <h2>How It Works</h2>
+      <p>Three core workflows that groomers actually care about.</p>
+
+      <div class="demo-grid">
+        <div class="demo-item">
+          <img src="demo-appointment-booking.png" alt="Appointment Booking Interface">
+          <h3>📅 Book Appointments</h3>
+          <p>Breed-aware scheduling with service selection. Groomers set pricing by size/service; clients book from anywhere, anytime.</p>
+        </div>
+
+        <div class="demo-item">
+          <img src="demo-client-portal.png" alt="Client Portal Dashboard">
+          <h3>💼 Client Portal & History</h3>
+          <p>Clients see their pets, next appointments, and loyalty rewards. All information at a glance—no more phone tag.</p>
+        </div>
+
+        <div class="demo-item">
+          <img src="demo-pet-history.png" alt="Pet Grooming History">
+          <h3>📱 Pet Records & History</h3>
+          <p>Complete grooming history with services, dates, and groomer names. Never lose context on a regular's preferences and history.</p>
+        </div>
+      </div>
+
+      <div class="demo-cta">
+        <p style="font-size: 1.1rem; color: #666; margin-bottom: 30px;">Ready to try it? Take it for a spin with the live demo.</p>
+        <a href="https://groombook.farh.net" class="btn-demo" style="display: inline-block;">Launch Demo →</a>
+        <p style="margin-top: 25px; color: #999; font-size: 0.95rem;">Or run it locally: <code style="background: #f0f0f0; padding: 4px 8px; border-radius: 4px;">docker compose up</code></p>
+      </div>
     </div>
   </section>
 
