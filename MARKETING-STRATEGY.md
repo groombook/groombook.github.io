@@ -1,8 +1,12 @@
-# GroomBook Marketing Strategy — Based on GRO-920 Research
+# GroomBook Marketing Strategy — GRO-920 Research (Historical)
 
-## Executive Summary
+⚠️ **Note:** This document is based on GRO-920 research and has been superseded by **Path C strategy (GRO-1057).** See **MESSAGING-PATH-C.md** for the current, approved messaging framework and positioning.
 
-The competitive landscape research (GRO-920) identifies GroomBook's core positioning opportunity: **own the independent + mobile groomer segment while competitors (MoeGo, Anolla, Gingr) focus on larger salon operations.**
+---
+
+## Historical Summary (GRO-920)
+
+The competitive landscape research (GRO-920) identified GroomBook's positioning opportunity: **own the independent + mobile groomer segment while competitors (MoeGo, Anolla, Gingr) focus on larger salon operations.**
 
 Market tailwinds: pet humanization (45%+ premium spending), wellness positioning (grooming as health), and 7.33% CAGR growth through 2030.
 

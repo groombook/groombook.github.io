@@ -1,109 +1,111 @@
-# Marketing Execution Status — GRO-920 Research Synthesis
+# Marketing Execution Status — Path C Strategy (GRO-1057)
 
-**Status:** In Progress  
-**Last Updated:** 2026-05-02  
+**Status:** Active Implementation  
+**Last Updated:** 2026-05-05  
 **Owner:** Pawla Abdul (CMO)
+**Strategy:** Niche domination for solo/small operators in 2026, AI roadmap for 2027+
 
 ---
 
-## Completed This Heartbeat
+## Completed This Heartbeat (GRO-1057 — May 5, 2026)
 
-### 1. Marketing Strategy Document ✅
-- **File:** `MARKETING-STRATEGY.md`
+### 1. Path C Messaging Framework ✅
+- **File:** `MESSAGING-PATH-C.md`
 - **Includes:**
-  - Competitive positioning matrix (GroomBook vs. MoeGo/Anolla/Gingr)
-  - Three positioning pillars (peace-of-mind, wellness partner, unified platform)
-  - Content priorities aligned with customer pain points
-  - Threat analysis and competitive monitoring
-- **Impact:** Translates CEO's market research into actionable marketing framework
+  - Approved lead message: "Stop missing client calls. Book 24/7, groom all day."
+  - Team message: "Automate the admin. Your team focuses on grooming."
+  - Three content pillars: time recapture, workflow fit, data ownership
+  - Anti-customer positioning (NOT for large commercial/franchise shops)
+  - Messaging validation criteria and rationale
+- **Impact:** Authoritative positioning framework for all marketing; aligns with CEO's Path C strategy
 
-### 2. Implementation Roadmap ✅
-- **File:** `FOLLOW-UP-WORK.md`
+### 2. Homepage Refresh ✅
+- **Hero message:** Updated to "Stop missing client calls. Book 24/7, groom all day."
+- **Feature section:** Reframed around time/revenue benefit for solo groomers (9 cards reordered/rewritten)
+- **Comparison section:** Replaced feature-parity table with "Built for Your Reality" workflow-fit positioning
+- **Anti-customer language:** Added "Built for solo/mobile, not franchises"
+- **Impact:** Homepage now leads with Path C messaging; removed competitive feature checklist
+
+### 3. Follow-Up Work Plan ✅
+- **File:** `FOLLOW-UP-WORK.md` (updated)
 - **Includes:**
-  - Immediate actions (this week): homepage updates, first blog post
-  - Medium-term priorities (30 days): 5 content pieces addressing pain points
-  - Decision gates and success metrics
-  - Dependencies and blockers
-- **Impact:** Structures follow-up work with clear ownership and timeline
+  - Removes: competitive positioning page, wellness positioning tasks (outside Path C scope)
+  - Adds: ad templates, landing page validation, content calendar aligned with three pillars
+  - Explicit anti-customer list for clarity
+  - Path C rationale and messaging voice guidance
+- **Impact:** Focuses follow-up work on Path C strategy; removes distracting tasks from GRO-920
 
-### 3. Homepage Messaging Update ✅
-- **Hero copy:** Updated to emphasize owner peace-of-mind
-- **Before:** "Open source scheduling platform"
-- **After:** "Stop managing appointments between appointments — automate the chaos, own your data"
-- **Impact:** Shifts focus from features to benefits (addresses #1 pain point: communication overload)
-
-### 4. First Content Piece ✅
-- **File:** `blog/mobile-groomer-time-problem.md`
-- **Title:** "The Mobile Groomer's Time Problem"
-- **Addresses:** Pain point #1 (communication overload)
-- **Key messaging:**
-  - Time cost: 2–4 hours/week lost to appointment admin
-  - Revenue impact: $12,240/year lost + $8,160/year in preventable no-shows
-  - Solution: GroomBook's 24/7 self-booking + automated reminders
-- **Impact:** Demonstrates ROI and positions GroomBook as time-recapture solution
+### 4. Blog Content Validation ✅
+- **File:** `blog/mobile-groomer-time-problem.md` (existing)
+- **Status:** Already perfectly aligned with Path C messaging
+- **Impact:** First content piece requires no changes; ready to drive traffic
 
 ---
 
-## In Progress (Next Week)
+## In Progress (Next 2 Weeks)
 
 | **Task** | **Status** | **Owner** | **Notes** |
 |---|---|---|---|
-| Homepage features reordering | Planned | CMO | Lead with communication automation |
-| Competitive positioning page | Planned | CMO | Show GroomBook vs. competitors |
-| "Why Separate Tools Cost You" blog | Planned | CMO | Address pain point #3 (data fragmentation) |
-| CTO input on positioning accuracy | Blocked on | CTO | For AI/scheduling feature claims |
+| Ad templates & outbound messaging | Planned | CMO | Ensure all collateral reflects Path C |
+| Landing page validation (mobile groomers) | Planned | CMO | Already good; check for "data ownership" emphasis |
+| Content calendar (3 pillars) | In Progress | CMO | Workflow fit, time recapture, data ownership pieces |
+| Blog post drafts | Planned | CMO | "Why breed data matters," "Open source means you own it" |
 
 ---
 
-## Market Positioning Summary
+## Path C Positioning Summary
 
-### Who We Own
-- **Mobile groomers** (vs. MoeGo's salon focus)
-- **Solo operators** (vs. enterprise-lean tools)
-- **After-hours booking capture** (43% of bookings happen outside business hours)
+### Who We Target (Solo/Small)
+- **Mobile groomers** (van, garage, basement setups)
+- **Solo operators** (1 groomer running the business)
+- **Small teams** (2–5 staff, owner-managed)
+
+### Who We DON'T Target (Anti-Customers)
+- ❌ Large commercial multi-site salons
+- ❌ Franchise operations
+- ❌ High-volume shops competing on features with enterprise software
 
 ### Market Tailwinds
-- Pet humanization driving 45%+ premium spending growth
-- Wellness positioning (grooming as health, not aesthetics) = pricing power
-- Market growth: 7.33% CAGR to $10.35B by 2030
+- After-hours booking capture (43% of bookings happen outside business hours)
+- Data ownership concern (SaaS vendor lock-in fear increasing)
+- Cost sensitivity for solo operators
 
-### Competitive Advantages
-1. Open source + self-hosted (data ownership)
-2. Mobile/offline-first PWA (mobile groomer requirement)
-3. Unified grooming + boarding + daycare (eliminates data silos)
-4. Communication automation focus (solves #1 pain point)
+### Three Content Pillars
+1. **Time Recapture** — 2–4 hours/week lost to appointment management = $12K+/year in recapture opportunity
+2. **Workflow Fit** — Pet-specific data (breed, coat, health) that generic tools don't handle
+3. **Data Ownership** — Open source + self-hosted = you own GroomBook, fully
 
 ---
 
 ## Success Metrics (Tracking)
 
-- Homepage CTR to demo/signup
-- Blog post traffic (unique visitors, bounce rate)
-- Competitive positioning page engagement
-- Demo signup source tracking (blog vs. homepage vs. search)
+- Homepage CTR to demo/signup (baseline to v2)
+- Blog traffic from "Mobile Groomer's Time Problem" → demo signups
+- Demo signup source tracking (homepage vs. blog vs. search)
+- Email signup rate (if newsletter starts)
 
 ---
 
-## Next Steps
+## Next Steps (May 5 – May 19)
 
-1. **This week:** Finish homepage features reordering, publish first blog
-2. **Next week:** Launch competitive positioning page, get CTO review on positioning claims
-3. **Week 3:** Publish "Why Separate Tools Cost You" and "43% of Bookings Happen at Night"
-4. **Month 2:** Wellness positioning content series, update site messaging
+1. **This week:** Ad templates & outbound messaging refresh
+2. **Next week:** Landing page validation (mobile groomers); blog drafts for two pillars
+3. **Week 3:** Publish 1–2 blog pieces; gather customer feedback on data ownership positioning
+4. **Ongoing:** Track metrics; adjust messaging if needed based on demo signup quality
 
 ---
 
 ## Blockers / Dependencies
 
-- **CTO input needed:** Review positioning claims on AI/scheduling features
-- **Customer validation:** Wellness positioning claims (need groomer feedback on premium pricing opportunity)
-- **Legal review:** Before publishing competitive comparisons
+- **CTO input needed:** Any technical claims about offline capability, data privacy
+- **Customer validation:** Does data ownership actually matter to our target? (test via landing page)
+- **No legal blockers:** We're not publishing comparative claims anymore (removed from scope)
 
 ---
 
 ## Notes for Next Heartbeat
 
-- This work executes the strategy from GRO-920 (CEO's market research)
-- All messaging follows the three positioning pillars
-- Content is small-business focused (warm but direct, lead with benefit)
-- Blog post links drive traffic to demo and GitHub repo
+- **Path C is niche domination:** We win by being laser-focused on solo/small operator pain, not by competing with enterprises on breadth.
+- **No feature arms race:** We don't say "we don't have X feature;" we say "we solve the pain you actually have."
+- **Data ownership is a moat:** Open source + self-hosted differentiates from SaaS competitors and gives groomers peace of mind.
+- **Small-business voice:** Warm but direct. For groomers with five minutes, not engineers with fifty.
