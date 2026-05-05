@@ -1,100 +1,127 @@
-# Marketing Follow-Up Work from GRO-920 Research
+# Marketing Follow-Up Work — Path C Strategy (GRO-1057)
 
 ## Summary
 
-GRO-920 (market research) is complete. The CEO's competitive landscape, market trends, and customer pain point analysis has been synthesized into a marketing strategy (MARKETING-STRATEGY.md). This document tracks the follow-up work to execute that strategy.
+CEO approved Path C strategy (GRO-1055 research, finalized in GRO-1057): **Niche domination for solo/small operators in 2026, AI roadmap for 2027+.**
+
+This document tracks the follow-up work to execute Path C messaging and positioning. See MESSAGING-PATH-C.md for the authoritative messaging framework.
 
 ---
 
-## Immediate Actions (This Week)
+## Completed (GRO-1057 — May 5, 2026)
 
-### 1. Homepage Features Reordering
-**Goal:** Lead with communication automation (solves #1 pain point)
+### ✅ Path C Messaging Framework
+- **File:** MESSAGING-PATH-C.md
+- **Includes:**
+  - Lead message: "Stop missing client calls. Book 24/7, groom all day."
+  - Team message: "Automate the admin. Your team focuses on grooming."
+  - Anti-customer positioning (NOT for large commercial/franchise shops)
+  - Three content pillars: time recapture, workflow fit, data ownership
 
-**Status:** In Progress
-- ✅ Hero copy updated: "Stop managing appointments between appointments"
-- ⏳ Reorder feature cards to emphasize communication/automation first
-- ⏳ Update feature section subtitle to emphasize "owner time recapture"
+### ✅ Homepage Refresh
+- **Hero message:** Updated to Path C lead message
+- **Feature section:** Reframed around time/revenue benefit for solo groomers (not generic features)
+- **"Built for Your Reality" section:** Replaced feature-parity comparison table with workflow-fit positioning
+  - Emphasizes: mobile capability, offline-first, 24/7 booking, data ownership
+  - Removes: competitive feature checklist (Path C doesn't compete on breadth)
+- **Anti-customer language:** "Built for solo/mobile, not franchises"
 
-**Ownership:** CMO (Pawla Abdul)
+### ✅ Blog Post Validation
+- "The Mobile Groomer's Time Problem" (already published) aligns perfectly with Path C messaging
 
 ---
 
-### 2. First Content Piece: "The Mobile Groomer's Time Problem"
-**Goal:** Demonstrate the pain point + ROI of GroomBook's communication automation
+## In Progress (Next 2 Weeks)
+
+### 1. Ad Templates & Outbound Messaging
+**Goal:** Update all marketing collateral to reflect Path C positioning
 
 **Scope:**
-- Time math: average mobile groomer loses 2–4 hours/week to phone management
-- Cost per missed booking
-- Show how GroomBook's automated booking + reminders + waitlist recapture that time
-- Real-world case study or simulation
+- Update ad copy (if any exist) to lead with "Stop missing client calls"
+- Ensure all outbound messaging emphasizes solo/small-team focus
+- Remove any feature-parity language vs. Gingr/MoeGo/Fresha
+- Add anti-customer messaging where relevant (e.g., "We're built for mobile groomers, not franchise chains")
 
 **Ownership:** CMO (Pawla Abdul)
 
 ---
 
-### 3. Competitive Positioning Page
-**Goal:** Show how GroomBook vs. MoeGo / Anolla / Gingr
+### 2. Landing Page for Mobile Groomers
+**Goal:** Deepen positioning around offline capability and mobile workflow
 
 **Scope:**
-- Interactive comparison (pricing, target market, differentiators)
-- Emphasize GroomBook's advantages:
-  - Open source + self-hosted (ownership)
-  - Mobile/offline-first (solves mobile groomer pain)
-  - Unified platform (data silos eliminated)
-  - Affordability
-- Position Anolla as premium AI add-on (not competitor), MoeGo as salon-focused (not for mobile)
+- Already exists (mobile-groomers.html) — good positioning; validate alignment with Path C
+- Potential updates: emphasize "no vendor lock-in," data ownership more explicitly
+- Consider separate landing for "Small Teams" segment
 
 **Ownership:** CMO (Pawla Abdul)
 
 ---
 
-## Medium-Term Content (30 Days)
+### 3. Content Calendar for Pillar Topics
+**Goal:** Create 3–4 blog posts addressing Path C's three content pillars
 
-| **Topic** | **Why** | **Ownership** |
+**Topics:**
+- **Time Recapture:** "Stop missing client calls — the math" (already published)
+- **Workflow Fit:** "Why breed-specific grooming data matters" or "Coat type profiles vs. generic fields"
+- **Data Ownership:** "Open source means you own this software, fully" or "Self-hosted vs. SaaS: what matters for small operators"
+
+**Ownership:** CMO (Pawla Abdul)
+
+---
+
+## Medium-Term Content (Next Month)
+
+**Content pillars (from MESSAGING-PATH-C.md):**
+
+| **Pillar** | **Blog Topics** | **Ownership** |
 |---|---|---|
-| "Why Separate Tools Cost You" | Data fragmentation pain (#3) | CMO |
-| "43% of Bookings Happen at Night" | After-hours booking gap (#5) | CMO |
-| "Zero Double-Bookings" | Scheduling chaos pain (#2) | CTO/Principal Engineer + CMO |
-| "Wellness Grooming Positioning" | Market trend: premiumization | CMO |
-| "Open Source Means You Own Your Tools" | Vendor support pain (#4) + differentiation | CTO + CMO |
+| **Time Recapture** | "Stop missing client calls — the math" (published) | CMO ✅ |
+| **Workflow Fit** | "Why breed-specific grooming matters" (draft) | CMO |
+| **Workflow Fit** | "Coat type profiles let you charge more" (draft) | CMO |
+| **Data Ownership** | "Open source means you own this software" (draft) | CMO / CTO |
+
+**NOT publishing (outside Path C scope):**
+- ❌ Competitive positioning page (Path C doesn't compete on feature parity)
+- ❌ "Wellness Grooming Positioning" (was GRO-920; Path C focuses on workflow fit + revenue)
+- ❌ "Zero Double-Bookings" detailed post (feature explainer; save for 2027 AI roadmap)
 
 ---
 
-## Decision Gates
+## Path C Anti-Customers
 
-### Before Publishing "The Mobile Groomer's Time Problem":
-- Review with CTO for accuracy of time/process claims
-- Validate with a real mobile groomer (case study or validation)
-- Ensure ROI math is defensible
+**Who we are NOT marketing to:**
+- ❌ Large commercial multi-site salons
+- ❌ Franchise operations
+- ❌ High-volume shops competing on features with enterprise software
 
-### Before Launching Competitive Positioning Page:
-- Legal review of comparative claims
-- Confirm pricing/feature accuracy for MoeGo/Anolla/Gingr
-- Review with CEO for competitive strategy alignment
+**Who we ARE marketing to:**
+- ✅ Mobile groomers (basement, garage, van)
+- ✅ Solo operators (1 groomer)
+- ✅ Small teams (2–5 staff)
+- ✅ Groomers who want to own their data
 
 ---
 
 ## Success Metrics
 
-- Homepage CTR improvement (demo/signup link)
-- Blog traffic to "Time Problem" post
-- Competitive positioning page bounce rate
-- Inquiry volume increase (track via demo signups)
+- Homepage CTR to demo/GitHub (measure vs. baseline)
+- Blog traffic from "Time Problem" post → demo signups
+- Demo signup source tracking (homepage vs. blog vs. search)
+- Engagement metrics: feature cards (feature order change impact)
 
 ---
 
 ## Blockers / Dependencies
 
-- **CTO input needed** on AI/scheduling features for positioning accuracy
-- **Real customer validation** for wellness positioning claims (e.g., pricing power)
-- **Legal review** before publishing competitive claims
+- **CTO input** on any technical positioning claims (offline capability, data migration, etc.)
+- **Customer validation** needed: Do solo groomers actually care about data ownership? (assumption to test)
 
 ---
 
 ## Notes
 
-- This work is driven by the market research insights (GRO-920)
-- All messaging should align with the three positioning pillars: peace-of-mind, wellness partner, unified platform
-- Content should use small-business voice (warm but direct, lead with benefit not feature)
-- Avoid jargon; write for groomers with five minutes, not engineers with fifty
+- **Path C = Niche Domination:** We win by being laser-focused on solo/small operator pain, not by competing with enterprises on breadth.
+- **Messaging voice:** Warm but direct. Lead with benefit. For groomers with five minutes, not engineers with fifty.
+- **No feature arms race:** We're not saying "we don't have X feature that Gingr has." We're saying "we solve the pain you actually have."
+- **Data ownership is a moat:** Open source + self-hosted is a key differentiator that enterprises can't match. Lean into it.
